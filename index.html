@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="BiduKo Studio: A Cinematic 3D Architectural Experience." />
+    <meta name="theme-color" content="#0b1626" />
+    <title>BiduKo Studio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='24' height='24' fill='none' stroke='%238fe3f2' stroke-width='2'/%3E%3Cpath d='M4 16h24' stroke='%23ff5a36' stroke-width='2'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <div class="loader" id="loader" role="status" aria-live="polite">
+      <div class="loader-inner">
+        <p class="loader-label" id="loaderLabel">Loading The Structure</p>
+        <div class="loader-track"><div class="loader-bar" id="loaderBar"></div></div>
+        <p class="loader-value" id="loaderValue">0%</p>
+      </div>
+    </div>
+
+    <header class="topbar">
+      <a class="wordmark" href="#" aria-label="BiduKo Studio">
+        <span class="wm-main">BiduKo</span><span class="wm-sub">Studio</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-link" id="viewsToggle" type="button" aria-expanded="true" aria-controls="views">Views</button>
+        <a class="nav-link" id="contactLink" href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main class="copy">
+      <div class="copy-stack" id="copyStack">
+        <p class="stage-index" aria-hidden="true">
+          <span id="stageNum">01</span><span class="stage-rule"></span><span>05</span>
+        </p>
+        <h1 class="headline" id="headline">
+          <span class="layer outline" id="hlOutline" aria-hidden="true">Approach</span>
+          <span class="layer fill" id="hlFill">Approach</span>
+          <span class="layer scan" id="hlScan" aria-hidden="true">Approach</span>
+        </h1>
+        <p class="lede" id="lede" aria-live="polite">The main hall at three-quarter view, its roofline cut against a grey sky.</p>
+        <button class="explore" id="exploreBtn" type="button" aria-pressed="false">Explore The Structure</button>
+      </div>
+    </main>
+
+    <nav class="views" id="views" aria-label="Camera stages">
+      <div class="views-head">
+        <span class="views-title">Views</span>
+        <span class="views-hint">Scroll or use the arrow keys</span>
+      </div>
+      <div class="views-list"></div>
+    </nav>
+
+    <div class="element-tag" id="elementTag" aria-hidden="true"></div>
+    <div class="structure-tags" id="structureTags" aria-hidden="true"></div>
+
+    <div class="strip" aria-hidden="true">
+      <div class="track" id="track"></div>
+    </div>
+
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor-tag" id="cursorTag"></span>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

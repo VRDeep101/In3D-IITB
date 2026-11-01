@@ -1,0 +1,11 @@
+3D model
+--------
+"Japanese Lowpoly temple" by carolinefangel
+Source: https://sketchfab.com/3d-models/japanese-lowpoly-temple-cc26af7781344e908d356030e84e4121
+License: CC BY 4.0 — http://creativecommons.org/licenses/by/4.0/
+Changes: none to the geometry or materials. Loaded as provided in temple.glb.
+
+Fonts
+-----
+Batman Forever (BatmanForeverAlternate, BatmanForeverOutline) — supplied by the project owner in batman_forever.zip.
+Newsreader — Production Type, SIL Open Font License 1.1, via @fontsource/newsreader.
